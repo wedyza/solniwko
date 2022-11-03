@@ -1,0 +1,45 @@
+<!DOCTYPE> <! помогает браузеру определить, что этот файл - сайт >
+<html> <! основной тег сайта >
+	<head>
+		<title> Новостной сайт  </title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<script src="./script.js"></script>
+	</head>
+	<body>
+		<div class="siteHeader"> 
+			<a href="main.html" class="logo"><div> 
+  			<img src="logo.png">
+			</div></a>
+			<h4 class="nameOfSite"> Блог </h4>
+			<div class="buttons">
+				<a href="blog.html" class="buttonHyperlink">
+					<button class="headerButton"> Блог </button>
+				</a>
+				<a href="photos.html" class="buttonHyperlink">
+					<button class="headerButton"> Фотографии </button>
+				</a>
+			</div>
+		</div>
+			<!test>
+		<div class="siteBody">
+			<div class="inputBlogs">
+				<p> Текст для блога </p>
+				<textarea name="comment" id="comment" cols="40" rows="3" placeholder="Введите текст"></textarea>	
+				<div class="twoButtons">
+					<input type="submit" value="Отправить" onclick="addBlog();" id="sendButton">
+					<input type="reset" value="Очистить" onclick="toClear();">
+				</div>
+			</div>
+			<div id="blogi">
+				<input type="file" onchange="readFile(this);">
+					
+			</div>
+		</div>
+		<script></script>
+
+
+
+			<!test>
+	</body>
+</html>

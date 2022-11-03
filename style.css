@@ -1,0 +1,98 @@
+.siteHeader{
+	display: flex;
+	width: 100%;
+	background-color: #cce6ff;
+}
+
+.headerButton{
+	background-color: #99ccff;
+	font-size: 15px;
+	height: 45px;
+	width: 150px;
+	border-radius: 30px;
+	margin-right: 3%;
+	float: right;
+}
+
+.headerButton:hover{
+	background-color: #80bfff;
+}
+
+.headerButton:active{
+	background-color: #66b3ff;
+}
+
+.logo{
+	align-content: left;
+	background-color: red;
+	width: 100px;
+	height: 100px;
+	margin-right: 10%;
+}
+
+.nameOfSite{
+	font-size: 26px;
+}
+
+body{
+	margin: 0px;
+	background-color: #d4f2ff;
+}
+
+.buttonHyperlink{
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+.buttons{
+	margin-left: auto;
+	margin-right: 10%;
+	display: flex;
+	margin-top: 25px;
+}
+
+.pageContent{
+	display: flex;
+	height: auto;
+}
+
+.group{
+	width: 33%;
+	height: 100%;
+	font-size: 25px;
+	border: 1px solid black;
+	padding-left: 15px;
+	padding-top: 5px;
+}
+
+.inputBlogs{
+	width: 35%;
+	height: 100%;
+}
+
+.twoButtons{
+	margin: 5px;
+}
+
+.siteBody{
+	display: flex;
+}
+
+.newBlog{
+	width: 100%;
+	font-size: 17px;
+	border: 1px solid black;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	word-wrap: break;
+}
+
+#blogi{
+	background-color: #91e5ff;
+	height: 100%;
+	width: 100%	;
+}
+
+.photo{
+	background-color: ;
+}
