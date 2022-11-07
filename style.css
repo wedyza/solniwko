@@ -93,6 +93,12 @@ body{
 	width: 100%	;
 }
 
-.photo{
-	background-color: ;
+#photo{
+	display: flex;
+}
+
+.newPhoto{
+	width: 320px;
+	height: 180px;
+	margin: 50px;
 }

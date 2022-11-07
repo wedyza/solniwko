@@ -2,7 +2,7 @@ let display;
 let index = 0;
 let blogs;
 let sendButton;
-
+let photoBlock;
 
 document.addEventListener('DOMContentLoaded', ready);
 
@@ -33,19 +33,39 @@ function ready(){
 	display = document.querySelector('#comment');
 	blogs = document.querySelector('#blogi');
 	sendButton = document.querySelector('#sendButton');
+	photoBLock = document.querySelector('#photo');
 }
 
 function readFile(input){
-		let reader = new FileReader();
-	console.log(input.length);
-	for(let i = 0; i < input.length; i++){
+	let reader = new FileReader();
+	
+	let file = input.files[0];
+
+	reader.readAsText(file);
+
+	reader.onload = () => {
 		index++;
-		reader.readAsText(input[i]);
 		let text = document.createTextNode(reader.result);
-		let blogNumber = document(`Блог №${index}: `)
-		let anotherBlog = document.createElement("p");
+		let blogNumber = document.createTextNode(`Блог №${index}: `);
+		let anotherBlog = document.createElement("p");		
 		anotherBlog.appendChild(blogNumber);
 		anotherBlog.appendChild(text);
+		anotherBlog.className = "newBlog";
 		blogs.appendChild(anotherBlog);
+	}
+}
+
+function readPhotos(input){
+	let reader = new FileReader();
+
+	let file = input.files[0];
+
+	reader.readAsDataURL(file);
+	console.log(file);
+	reader.onload = () => {
+		let tag = document.createElement("img");
+		tag.className = "newPhoto";
+		tag.src = reader.result;
+		photoBLock.appendChild(tag);
 	}
 }

@@ -4,6 +4,7 @@
 		<title> Новостной сайт  </title>
 		<meta charset="utf-8"/>
 		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<script src="script.js"></script>
 	</head>
 	<body>
 		<div class="siteHeader"> 
@@ -22,9 +23,10 @@
 		</div>
 		<div>
 			<h2> Фотографии со скрытых камер корабля: </h2>
+			<input type="file" onchange="readPhotos(this);	"/>
 		</div>
-		<div class="photo">
-			
+		<div id="photo">
+
 		</div>
 	</body>
 </html>
